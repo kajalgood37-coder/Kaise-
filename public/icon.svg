@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1e0b2b"/>
+      <stop offset="60%" stop-color="#0a0518"/>
+      <stop offset="100%" stop-color="#04020a"/>
+    </radialGradient>
+    <linearGradient id="neonPinkCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2a85"/>
+      <stop offset="50%" stop-color="#9d4edd"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- Base Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Outer Glow Ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#ff2a85" stroke-width="4" opacity="0.3" filter="url(#glow)"/>
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#00f0ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.5"/>
+  <circle cx="256" cy="256" r="130" fill="url(#neonPinkCyan)" opacity="0.15" filter="url(#glow)"/>
+  
+  <!-- Core Orb -->
+  <circle cx="256" cy="256" r="105" fill="#0f0920" stroke="url(#neonPinkCyan)" stroke-width="6" filter="url(#glow)"/>
+  
+  <!-- Soundwave Bars behind letter -->
+  <rect x="175" y="236" width="6" height="40" rx="3" fill="#00f0ff" opacity="0.7"/>
+  <rect x="195" y="216" width="6" height="80" rx="3" fill="#ff2a85" opacity="0.8"/>
+  <rect x="310" y="220" width="6" height="72" rx="3" fill="#ff2a85" opacity="0.8"/>
+  <rect x="330" y="240" width="6" height="32" rx="3" fill="#00f0ff" opacity="0.7"/>
+  
+  <!-- Stylish 'P' for Priya -->
+  <path d="M 225 185 L 225 330 M 225 185 L 265 185 C 295 185, 305 205, 305 228 C 305 251, 295 270, 265 270 L 225 270" 
+        fill="none" 
+        stroke="url(#neonPinkCyan)" 
+        stroke-width="22" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        filter="url(#glow)"/>
+        
+  <!-- Sparkle Accent -->
+  <circle cx="305" cy="185" r="8" fill="#ffffff" filter="url(#glow)"/>
+</svg>

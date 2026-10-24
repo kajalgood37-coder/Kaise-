@@ -1,0 +1,11 @@
+{
+  "name": "Priya AI Assistant",
+  "description": "Real-time, voice-to-voice sassy, witty, and charming AI companion powered by Gemini Live API.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
